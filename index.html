@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+
+    <h2>Feedback Form</h2>
+
+    <form id="feedbackForm">
+      
+        <label for="name" style="font-weight: bold;">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter  your Name">
+        <div id="nameError" style="color: red; display: none;">Name is required!</div>
+        <br><br>
+    
+        <label for="email" style="font-weight: bold;">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your Email">
+        <div id="emailError" style="color: red; display: none;">Valid email is required!</div>
+        <br><br>
+
+        <button type="submit" onclick="click">Submit</button>
+        <div id="successMessage" style="color: green; display: none; margin-top: 20px; font-weight: bold;" >Thank you for your feedback!</div>
+
+      </form>
+
+<script src="script.js"></script>
+</body>
+</html>
